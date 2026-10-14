@@ -1,0 +1,14 @@
+[versions]
+alloy = "0.1.0"
+exposed = "1.+"
+lodestone = "0.1.0"
+velocity = "4.2.1-SNAPSHOT"
+
+[libraries]
+alloy = { module = "cat.freya:alloy", version.ref = "alloy" }
+exposed-core = { module = "org.jetbrains.exposed:exposed-core", version.ref = "exposed" }
+exposed-jdbc = { module = "org.jetbrains.exposed:exposed-jdbc", version.ref = "exposed" }
+velocity-api = { module = "com.velocitypowered:velocity-api", version.ref = "velocity" }
+
+[plugins]
+lodestone = { id = "cat.freya.lodestone", version.ref = "lodestone" }
