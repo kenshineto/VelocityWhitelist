@@ -1,3 +1,4 @@
+import cat.freya.lodestone.License
 import cat.freya.lodestone.excludeKotlin
 
 plugins {
@@ -6,7 +7,7 @@ plugins {
 
 group = "cat.freya.velocitywhitelist"
 
-version = "0.1.0"
+version = "0.2-SNAPSHOT"
 
 description = "A Whitelist for Velocity"
 
@@ -31,11 +32,19 @@ lodestone {
         relocations.add("org.jetbrains.exposed")
         relocations.add("org.yaml.snakeyaml")
     }
+    publish {
+        group = "cat.freya"
+        artifact = "VelocityWhitelist"
+        author = "KenshinEto"
+        url = "https://g.freya.cat/VelocityWhitelist"
+        license = License.GPL3
+    }
 }
 
 repositories {
     mavenCentral()
     maven("https://repo.papermc.io/repository/maven-public/")
+    maven("https://maven.freya.cat/snapshots")
 }
 
 dependencies {

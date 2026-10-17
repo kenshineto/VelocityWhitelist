@@ -1,7 +1,7 @@
 [versions]
-alloy = "0.1.0"
+alloy = "0.1-SNAPSHOT"
 exposed = "1.+"
-lodestone = "0.1.0"
+lodestone = "0.1-SNAPSHOT"
 velocity = "4.2.1-SNAPSHOT"
 
 [libraries]
