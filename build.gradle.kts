@@ -1,5 +1,5 @@
-import cat.freya.lodestone.License
 import cat.freya.lodestone.excludeKotlin
+import cat.freya.lodestone.publishing.License
 
 plugins {
     alias(libs.plugins.lodestone)
@@ -12,7 +12,8 @@ version = "0.2-SNAPSHOT"
 description = "A Whitelist for Velocity"
 
 lodestone {
-    jvm(25)
+    java(25)
+    kotlin()
     buildInfo {
         put("id", "velocitywhitelist")
         put("version", version)
@@ -33,11 +34,12 @@ lodestone {
         relocations.add("org.yaml.snakeyaml")
     }
     publish {
-        group = "cat.freya"
         artifact = "VelocityWhitelist"
+        group = "cat.freya"
         author = "KenshinEto"
-        url = "https://g.freya.cat/VelocityWhitelist"
         license = License.GPL3
+        gitRepo = "https://g.freya.cat/VelocityWhitelist"
+        reposilite("https://maven.freya.cat")
     }
 }
 
